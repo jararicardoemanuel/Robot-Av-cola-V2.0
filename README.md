@@ -2,12 +2,12 @@
 
 Proyecto de la PPS en Ingeniería Mecatrónica realizado en la FI-UNLZ.
 
-Sistema robótico con visión artificial, IoT para detectar y recolectar huevos en nidos, implementación de monitoreo de variables ambientales temperatura, gas CO2, húmedad.
+Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software con procesamiento de imágenes para la detección y localización en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea IoT para el accionamiento de control del sistema, apliación para el envío de mensajes y recepción a través de "MQTT" además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
 
 ## 🟠Tecnologías Aplicadas
-• ESP32 - Shield cnc 3 ejes
-• Python - OpenCV
-• Node-RED - MQTT
+• ESP32 - Shield cnc 3 ejes, para el control de los motores nema 17, motores eléctricos de cc y sensores.
+• Python - OpenCV, para el diseño de software de detección y calculo de la cinematica inversa
+• Node-RED - MQTT, para el envío y recepción de mensajes
 • Sensores de CO₂ MQ135, temperatura y humedad DHT11
 
 ## 🟠Prototipo REAL
