@@ -21,6 +21,7 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
 
 Este ángulo se obtiene a partir de la proyección del punto de acción sobre el plano XY.  
 Las rotaciones se consideran respecto al eje **Z**.
+
 $$
 \theta_1 = 2\arctan\left(\frac{py}{px}\right)
 $$
