@@ -90,5 +90,5 @@ Configuración **codo arriba**
 
 ## 🟠Video del Prototipo en funcionamiento
 
-[Ver en Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
+[Link de Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
 
