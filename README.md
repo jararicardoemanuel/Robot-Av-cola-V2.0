@@ -1,13 +1,14 @@
 # 🐔🥚Robot Avícola V2.0
 
-Proyecto de la PPS en Ingeniería Mecatrónica realizado en la FI-UNLZ
-Sistema robótico con visión artificial y IoT para detectar y recolectar huevos en nidos, monitoreo de variables ambientales temperatura, gas CO2, húmedad.
+Proyecto de la PPS en Ingeniería Mecatrónica realizado en la FI-UNLZ.
+
+Sistema robótico con visión artificial, IoT para detectar y recolectar huevos en nidos, implementación de monitoreo de variables ambientales temperatura, gas CO2, húmedad.
 
 ## 💻⚡ Tecnologías Aplicadas
-- ESP32 - Shield cnc 3 ejes
-- Python - OpenCV
-- Node-RED - MQTT
-- Sensores de CO₂ MQ135, temperatura y humedad DHT11
+• ESP32 - Shield cnc 3 ejes
+• Python - OpenCV
+• Node-RED - MQTT
+• Sensores de CO₂ MQ135, temperatura y humedad DHT11
 
 ## 📸 Imagen del prototipo REAL
 
