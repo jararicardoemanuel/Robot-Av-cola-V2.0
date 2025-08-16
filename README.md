@@ -10,7 +10,7 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
 • Node-RED - MQTT
 • Sensores de CO₂ MQ135, temperatura y humedad DHT11
 
-## 📸 Imagen del prototipo REAL
+## 📸 Prototipo REAL
 
 <p align="center">
   <img src="robot.jpg" alt="Vista del robot" width="400"/>
