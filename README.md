@@ -61,7 +61,7 @@ Se ajusta en el plano vertical de la base, considerando la distancia entre el gr
 
 1. Se calcula la coordenada corregida en Z:
 
-\( p'_z = p_z - b \).
+$$\( p'_z = p_z - b \)$$
 
 
 
