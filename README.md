@@ -81,7 +81,7 @@ Paso4. Ángulo del codo:
 $$\theta_3 = 2\arctan\left(\frac{\sqrt{1-\cos^2(\theta_3)}}{\cos(\theta_3)}\right)\$$
 
 
-configuración **codo arriba**
+Configuración **codo arriba**
 
 
 • Con estos tres ángulos articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo.
