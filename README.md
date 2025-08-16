@@ -52,7 +52,7 @@ $$
 Finalmente:
 
 $$
-\theta_2 = \arctan\left(\frac{\sin(\theta_2)}{\cos(\theta_2)}\right)
+\theta_2 = 2\arctan\left(\frac{\sin(\theta_2)}{\cos(\theta_2)}\right)
 $$
 
 🔹  Articulación del codo $$\(\theta_3)$$
