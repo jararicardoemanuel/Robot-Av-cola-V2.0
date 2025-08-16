@@ -29,9 +29,8 @@ $$
 🔹 Articulación del brazo $$\(\theta_2)$$
 
 $$
-\[
 A_1 = l_1 + l_2 \cos(\theta_3), \quad A_2 = l_2 \sin(\theta_3)
-\]
+$$
 
 La distancia proyectada sobre el plano XY es:
 
@@ -57,5 +56,5 @@ Finalmente:
 
 ---
 
-•Con estos tres ángulos articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo.
+• Con estos tres ángulos articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo.
 
