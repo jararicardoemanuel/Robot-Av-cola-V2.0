@@ -10,7 +10,7 @@ Sistema robótico con visión artificial y IoT para detectar y recolectar huevos
 - Sensores de CO₂, temperatura y humedad
 
 ## 📸 Imagen del prototipo
-![Vista del robot](foto.webp)
+![Vista del robot](robot.jpg)
 
 ## 📐 Modelo matemático (Cinemática inversa)
 $$
