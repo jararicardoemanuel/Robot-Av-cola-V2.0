@@ -18,5 +18,5 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
 
 ## 📐 Modelo matemático (Cinemática inversa) 
 $$
-\theta_1 = \2\arctan\left(\frac{py}{px}\right)
+\theta_1 = 2\arctan\left(\frac{py}{px}\right)
 $$
