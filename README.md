@@ -61,20 +61,21 @@ Se ajusta en el plano vertical de la base, considerando la distancia entre el gr
 
 1. Se calcula la coordenada corregida en Z:
 $$
-p'_z = p_z - b
+\( p'_z = p_z - b \).
 $$
 
-2. Distancia proyectada:
+
+1. Distancia proyectada:
 $$
 D^2 = p_x^2 + p_y^2 + (p'_z)^2
 $$
 
-3. Aplicando la ley de cosenos:
+2. Aplicando la ley de cosenos:
 $$
 \cos(\theta_3) = \frac{D^2 - l_1^2 - l_2^2}{2 l_1 l_2}
 $$
 
-4. Ángulo del codo:
+3. Ángulo del codo:
 $$
 \theta_3 = \arctan\left(\frac{\sqrt{1-\cos^2(\theta_3)}}{\cos(\theta_3)}\right)
 $$
