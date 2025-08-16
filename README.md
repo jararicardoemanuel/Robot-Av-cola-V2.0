@@ -96,3 +96,7 @@ Configuración **codo arriba**
 
 [Link de Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
 
+
+<p align="center">
+  <img src="Logo FIUNLZ.png" alt="Vista del robot" width="400"/>
+</p>
