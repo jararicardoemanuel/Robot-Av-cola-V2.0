@@ -1,4 +1,6 @@
-# 🐔🥚Robot Avícola V2.0
+<h1 align="center" style="color:brown;">
+  🐔🥚Robot Avícola V2.0
+</h1>
 
 Proyecto de la PPS en Ingeniería Mecatrónica realizado en la FI-UNLZ.
 
