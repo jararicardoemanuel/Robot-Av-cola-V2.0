@@ -16,11 +16,6 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
   <img src="robot.jpg" alt="Vista del robot" width="400"/>
 </p>
 
-<p align="center">
-  <a href="a1.mp4">Ver video del robot</a>
-</p>
-
-
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
  🔹 Articulación de la base $$\(\theta_1)$$
