@@ -21,7 +21,7 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
  🔹 Articulación de la base $$\(\theta_1)$$
 
 Este ángulo se obtiene a partir de la proyección del punto de acción sobre el plano XY.  
-Las rotaciones se consideran respecto al eje **Z**.
+Las rotaciones se consideran respecto al eje Z.
 
 $$
 \theta_1 = 2\arctan\left(\frac{py}{px}\right)
@@ -85,4 +85,10 @@ Configuración **codo arriba**
 
 
 • Con estos tres coordenadas articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo 17x13cm.
+
+• Video del Prototipo en funcionamiento
+
+## 🎥 Video de demostración
+
+[Ver en Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
 
