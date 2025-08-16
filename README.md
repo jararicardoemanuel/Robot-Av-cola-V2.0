@@ -17,7 +17,7 @@ Sistema robótico con visión artificial, IoT para detectar y recolectar huevos 
 </p>
 
 ## 📐 Modelo matemático (Cinemática inversa) Robot
-## 🔹 Articulación de la base \theta_1\)
+## 🔹 Articulación de la base \(\theta_1\)
 
 Este ángulo se obtiene a partir de la proyección del punto de acción sobre el plano XY.  
 Las rotaciones se consideran respecto al eje **Z**.
