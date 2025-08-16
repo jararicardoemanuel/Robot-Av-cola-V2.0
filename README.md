@@ -28,6 +28,10 @@ Este ángulo se obtiene a partir de la proyección del punto de acción sobre el
 Las rotaciones se consideran respecto al eje Z.
 
 $$
+\{py}Coordenada x {px}\right)
+$$
+
+$$
 \theta_1 = 2\arctan\left(\frac{py}{px}\right)
 $$
 
