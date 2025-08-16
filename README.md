@@ -27,7 +27,7 @@ En los siguientes ítems se describe el modelo cinemático inverso aplicado al r
 Este ángulo se obtiene a partir de la proyección del punto de acción sobre el plano XY.  
 Las rotaciones se consideran respecto al eje Z.
 
-$\text{Coordenada } (x, y)$
+$\text{Coordenadas cartesianas } (px, py)$
 
 
 $$
