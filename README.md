@@ -60,9 +60,9 @@ $$
 Se ajusta en el plano vertical de la base, considerando la distancia entre el gripper y el extremo del codo.  
 
 1. Se calcula la coordenada corregida en Z:
-$$
+
 \( p'_z = p_z - b \).
-$$
+
 
 
 1. Distancia proyectada:
