@@ -57,5 +57,5 @@ Finalmente:
 
 ---
 
-✅ Con estos tres ángulos articulares $$\((\theta_1, \theta_2, \theta_3)\)$$ se obtiene la **configuración del robot avícola** para alcanzar cualquier punto dentro de su espacio de trabajo.
+✅ Con estos tres ángulos articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot avícola** para alcanzar cualquier punto dentro de su espacio de trabajo.
 $$
