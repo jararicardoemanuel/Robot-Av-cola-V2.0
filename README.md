@@ -17,7 +17,9 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
 <p align="center">
   <img src="20250718_190812.jpg" alt="Vista del robot" width="400"/>
 </p>
-
+<p align="center">
+  <img src="gif.gif" alt="Vista del robot" width="400"/>
+</p>
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
 En los siguientes ítems se describe el modelo cinemático inverso aplicado al robot de 3GDL por método geométrico.
