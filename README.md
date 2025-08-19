@@ -25,22 +25,22 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
 ### Captura de imagen:
   La cámara ESP32-CAM obtiene imágenes en tiempo real desde la parte superior del nido, cubriendo toda la parte donde se ubican los huevos.
   
-• $Inferencia con el modelo$:
+### Inferencia con el modelo:
   Las imágenes capturadas son enviadas al modelo de Roboflow, el cual aplica un algoritmo de detección de objetos (YOLOv9). Como resultado, se obtiene un conjunto de predicciones que      incluyen:
   Clases detectadas (``huevo'').
   Confianza de detección (probabilidad asociada a la predicción).
   Coordenadas del recuadro delimitador:
   (x, y, w, h) donde $x$ e $y$ representan la posición central del objeto, mientras que $w$ y $h$ corresponden al ancho y alto del recuadro.
 
-• $Conversión a coordenadas del robot$:
+### Conversión a coordenadas del robot:
   A partir de las coordenadas $(x, y)$ obtenidas en la cuadrícula de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
   (X_r, Y_r) = f(x, y)
   donde la función $f$ corresponde a la \textit{calibración} que traduce los píxeles en grados de los motores paso a paso, garantizando que el brazo robótico pueda posicionarse            correctamente sobre el huevo.
 
-• $Selección y validación$:
+### Selección y validación:
   Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido $0.75$. 
     
- • $Envío al sistema de control$:
+### Envío al sistema de control:
   Finalmente, las coordenadas cartesianas corregidas $(X_r, Y_r)$ se calcula la cinemática inversa del robot RRR para luego transmitir los angulos por el protocolo MQTT al controlador     del robot, que ejecuta la secuencia de agarre y recolección.
 
   La salida del modelo Roboflow
