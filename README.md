@@ -33,15 +33,15 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
   (x, y, w, h) donde $x$ e $y$ representan la posición central del objeto, mientras que $w$ y $h$ corresponden al ancho y alto del recuadro.
 
 ### Conversión a coordenadas del robot:
-  A partir de las coordenadas $(x, y)$ obtenidas en la cuadrícula de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
+  A partir de las coordenadas $(x, y)$ obtenidas de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
   (X_r, Y_r) = f(x, y)
-  donde la función $f$ corresponde a la \textit{calibración} que traduce los píxeles en grados de los motores paso a paso, garantizando que el brazo robótico pueda posicionarse            correctamente sobre el huevo.
+  donde la función $f$ corresponde a la calibración que traduce los píxeles en coordenadas cartesianas, garantizando que el brazo robótico pueda posicionarse correctamente sobre el        huevo.
 
 ### Selección y validación:
-  Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido $0.75$. 
+  Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido $0.40$. 
     
 ### Envío al sistema de control:
-  Finalmente, las coordenadas cartesianas corregidas $(X_r, Y_r)$ se calcula la cinemática inversa del robot RRR para luego transmitir los angulos por el protocolo MQTT al controlador     del robot, que ejecuta la secuencia de agarre y recolección.
+  Finalmente, con las coordenadas cartesianas corregidas $(X_r, Y_r)$ se calcula la cinemática inversa por método geométrico del robot RRR para luego transmitir los angulos por el protocolo MQTT al controlador del robot para luego ejecutar la secuencia de agarre y recolección.
 
   La salida del modelo Roboflow
   La predicción para un huevo detectado es el siguiente:
@@ -52,7 +52,7 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
       "y": 240,
       "width": 50,
       "height": 60
-Este resultado indica que se detectó un \textbf{huevo} con una confianza del $89%$ en la posición central $(320, 240)$. Posteriormente, este punto se transforma en coordenadas físicas para accionar el brazo robótico.
+Este resultado indica que se detectó un huevo con una confianza del $89%$ en la posición central $(320, 240)$. Este punto se transforma en coordenadas físicas para accionar el brazo robótico.
 
 <p align="center">
   <img src="detección.png" alt="Vista del robot" width="720"/>
