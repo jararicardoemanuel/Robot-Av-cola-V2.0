@@ -2,14 +2,14 @@
   🐔🥚Robot Avícola V2.0
 </h1>
 
-Proyecto de la PPS en Ingeniería Mecatrónica realizado en la FI-UNLZ.
+Proyecto de la Práctica Profesional Supervisada "PPS" en Ingeniería Mecatrónica realizado en la FI-UNLZ.
 
-Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software con procesamiento de imágenes para la detección y localización, diseño de software realizado en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea IoT para el accionamiento de control, aplicación para el envío de mensajes y recepción a través de "MQTT", además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
+Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software de procesamiento de imágenes para la detección y localización programado en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea un Sistema IoT para el accionamiento de control, aplicación para el envío de mensajes y recepción a través de "MQTT", además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
 
 ## 🟠Tecnologías Aplicadas
 • ESP32 - Shield cnc 3 ejes, para el robot se utilizan motores nema 17 con reductor planetario 5:1, motores eléctricos de cc para el carro que lo traslada y sensores de proximidad FC.
 • Python - OpenCV, para el diseño de software de detección y calculo de la cinemática inversa.
-• Node-RED - MQTT, para el envío y recepción de mensajes, node-red para el diseño del dashboard de control.
+• Node-RED - MQTT, para el envío y recepción de mensajes, aplicando los nodos se diseño un dashboard de control y monitoreo.
 • Sensores de CO₂ MQ135, temperatura y humedad DHT11
 
 ## 🟠Prototipo REAL
@@ -23,7 +23,7 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
 Para la detección automática de huevos se utiliza un modelo de visión por computadora entrenado en la plataforma Roboflow. El flujo de trabajo se resume en las siguientes etapas:
 
 ### Captura de imagen:
-  La cámara ESP32-CAM obtiene imágenes en tiempo real desde la parte superior del nido, cubriendo toda la parte donde se ubican los huevos.
+  La cámara ESP32-CAM ubicada en el extremos del codo apuntando hacia abajo captura las imágenes en tiempo real enfocando el nido, así cubriendo toda la parte donde se ubica el huevo.
   
 ### Inferencia con el modelo:
   Las imágenes capturadas son enviadas al modelo de Roboflow, el cual aplica un algoritmo de detección de objetos (YOLOv9). Como resultado, se obtiene un conjunto de predicciones que      incluyen:
