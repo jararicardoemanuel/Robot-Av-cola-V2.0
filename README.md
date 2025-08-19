@@ -34,7 +34,7 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
 
 • Conversión a coordenadas del robot
   A partir de las coordenadas $(x, y)$ obtenidas en la cuadrícula de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
-    (X_r, Y_r) = f(x, y)
+  (X_r, Y_r) = f(x, y)
   donde la función $f$ corresponde a la \textit{calibración} que traduce los píxeles en grados de los motores paso a paso, garantizando que el brazo robótico pueda posicionarse            correctamente sobre el huevo.
 
 • Selección y validación
