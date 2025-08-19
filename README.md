@@ -61,7 +61,9 @@ Este resultado indica que se detectó un \textbf{huevo} con una confianza del $8
 <p align="center">
   <img src="detección.png" alt="Vista del robot" width="720"/>
 </p>
-
+<p align="center">
+  <img src="coordenadas.png" alt="Vista del robot" width="720"/>
+</p>
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
 En los siguientes ítems se describe el modelo cinemático inverso aplicado al robot de 3GDL por método geométrico.
