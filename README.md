@@ -17,10 +17,6 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
 <p align="center">
   <img src="20250718_190812.jpg" alt="Vista del robot" width="400"/>
 </p>
-<p align="center">
-  <img src="gif.gif" alt="Vista del robot" width="400"/>
-</p>
-
 
 ## 🟠Procesamiento de Imágenes
 
@@ -140,7 +136,9 @@ Configuración **codo arriba**
 
 • Con estos tres coordenadas articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo 17x13cm.
 
-
+<p align="center">
+  <img src="gif.gif" alt="Vista del robot" width="400"/>
+</p>
 
 ## 🟠Video del Prototipo en funcionamiento
 
