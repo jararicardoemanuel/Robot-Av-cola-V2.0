@@ -62,7 +62,7 @@ Este resultado indica que se detectó un \textbf{huevo} con una confianza del $8
   <img src="detección.png" alt="Vista del robot" width="720"/>
 </p>
 <p align="center">
-  <img src="coordenadas.png" alt="Vista del robot" width="720"/>
+  <img src="coordenadas.png" alt="Vista del robot" width="1200"/>
 </p>
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
