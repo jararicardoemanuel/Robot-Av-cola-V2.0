@@ -21,6 +21,43 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
   <img src="gif.gif" alt="Vista del robot" width="400"/>
 </p>
 
+
+## 🟠Procesamiento de Imágenes
+
+Para la detección automática de huevos se utiliza un modelo de visión por computadora entrenado en la plataforma Roboflow. El flujo de trabajo se resume en las siguientes etapas:
+
+• Captura de imagen
+  La cámara ESP32-CAM obtiene imágenes en tiempo real desde la parte superior del nido, cubriendo toda la parte donde se ubican los huevos.
+  
+• Inferencia con el modelo
+  Las imágenes capturadas son enviadas al modelo de Roboflow, el cual aplica un algoritmo de detección de objetos (YOLOv9). Como resultado, se obtiene un conjunto de predicciones que      incluyen:
+  Clases detectadas (``huevo'').
+  Confianza de detección (probabilidad asociada a la predicción).
+  Coordenadas del recuadro delimitador:
+  (x, y, w, h) donde $x$ e $y$ representan la posición central del objeto, mientras que $w$ y $h$ corresponden al ancho y alto del recuadro.
+
+• Conversión a coordenadas del robot
+  A partir de las coordenadas $(x, y)$ obtenidas en la cuadrícula de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
+    (X_r, Y_r) = f(x, y)
+  donde la función $f$ corresponde a la \textit{calibración} que traduce los píxeles en grados de los motores paso a paso, garantizando que el brazo robótico pueda posicionarse            correctamente sobre el huevo.
+
+• Selección y validación
+  Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido $0.75$. 
+    
+ • Envío al sistema de control
+  Finalmente, las coordenadas cartesianas corregidas $(X_r, Y_r)$ se calcula la cinemática inversa del robot RRR para luego transmitir los angulos por el protocolo MQTT al controlador     del robot, que ejecuta la secuencia de agarre y recolección.
+
+  La salida del modelo Roboflow
+  La predicción para un huevo detectado es el siguiente:
+  "predictions": 
+      "class": "egg",
+      "confidence": 0.89,
+      "x": 320,
+      "y": 240,
+      "width": 50,
+      "height": 60
+Este resultado indica que se detectó un \textbf{huevo} con una confianza del $89%$ en la posición central $(320, 240)$. Posteriormente, este punto se transforma en coordenadas físicas para accionar el brazo robótico.
+
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
 En los siguientes ítems se describe el modelo cinemático inverso aplicado al robot de 3GDL por método geométrico.
@@ -95,60 +132,6 @@ Configuración **codo arriba**
 
 
 • Con estos tres coordenadas articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo 17x13cm.
-
-
-\section{Procesamiento de Imágenes}
-
-Para la detección automática de huevos se utiliza un \textbf{modelo de visión por computadora} entrenado en la plataforma \textit{Roboflow}. El flujo de trabajo se resume en las siguientes etapas:
-
-\begin{enumerate}
-    \item \textbf{Captura de imagen} \\
-    La cámara \textbf{ESP32-CAM} obtiene imágenes en tiempo real desde la parte superior del nido, cubriendo toda la cuadrícula donde se ubican los huevos.
-
-    \item \textbf{Inferencia con el modelo} \\
-    Las imágenes capturadas son enviadas al modelo de Roboflow, el cual aplica un algoritmo de \textit{detección de objetos} (YOLOv8). Como resultado, se obtiene un conjunto de predicciones que incluyen:
-    \begin{itemize}
-        \item Clases detectadas (ejemplo: ``huevo'').
-        \item Confianza de detección (probabilidad asociada a la predicción).
-        \item Coordenadas del recuadro delimitador (\textit{bounding box}):
-        \[
-        (x, y, w, h)
-        \]
-        donde $x$ e $y$ representan la posición central del objeto, mientras que $w$ y $h$ corresponden al ancho y alto del recuadro.
-    \end{itemize}
-
-    \item \textbf{Conversión a coordenadas del robot} \\
-    A partir de las coordenadas $(x, y)$ obtenidas en la cuadrícula de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del robot:
-    \[
-    (X_r, Y_r) = f(x, y)
-    \]
-    donde la función $f$ corresponde a la \textit{calibración} que traduce los píxeles en grados de los servomotores, garantizando que el brazo robótico pueda posicionarse correctamente sobre el huevo.
-
-    \item \textbf{Selección y validación} \\
-    Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido (ejemplo: $0.75$). En caso de que un huevo ocupe más de una celda de la cuadrícula, se selecciona la celda con mayor proporción cubierta para evitar ambigüedad en la recolección.
-
-    \item \textbf{Envío al sistema de control} \\
-    Finalmente, las coordenadas corregidas $(X_r, Y_r)$ son transmitidas mediante el protocolo \textbf{MQTT} al controlador del robot, que ejecuta la secuencia de agarre y recolección.
-\end{enumerate}
-
-\subsection*{Ejemplo de salida del modelo Roboflow}
-Un ejemplo de predicción para un huevo detectado es el siguiente:
-\begin{verbatim}
-{
-  "predictions": [
-    {
-      "class": "egg",
-      "confidence": 0.89,
-      "x": 320,
-      "y": 240,
-      "width": 50,
-      "height": 60
-    }
-  ]
-}
-\end{verbatim}
-
-Este resultado indica que se detectó un \textbf{huevo} con una confianza del $89\%$ en la posición central $(320, 240)$ de la imagen. Posteriormente, este punto se transforma en coordenadas físicas para accionar el brazo robótico.
 
 
 
