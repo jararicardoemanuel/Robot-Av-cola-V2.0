@@ -58,6 +58,10 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
       "height": 60
 Este resultado indica que se detectó un \textbf{huevo} con una confianza del $89%$ en la posición central $(320, 240)$. Posteriormente, este punto se transforma en coordenadas físicas para accionar el brazo robótico.
 
+<p align="center">
+  <img src="detección.png" alt="Vista del robot" width="400"/>
+</p>
+
 ## 🟠Modelo matemático (Cinemática inversa) Robot
 
 En los siguientes ítems se describe el modelo cinemático inverso aplicado al robot de 3GDL por método geométrico.
