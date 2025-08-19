@@ -22,7 +22,7 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
 
 Para la detección automática de huevos se utiliza un modelo de visión por computadora entrenado en la plataforma Roboflow. El flujo de trabajo se resume en las siguientes etapas:
 
-# Captura de imagen:
+### Captura de imagen:
   La cámara ESP32-CAM obtiene imágenes en tiempo real desde la parte superior del nido, cubriendo toda la parte donde se ubican los huevos.
   
 • $Inferencia con el modelo$:
