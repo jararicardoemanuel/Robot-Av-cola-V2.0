@@ -52,7 +52,7 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
       "y": 240,
       "width": 50,
       "height": 60
-Este resultado indica que se detectó un huevo con una confianza del $89%$ en la posición central $(320, 240)$. Este punto se transforma en coordenadas físicas para accionar el brazo robótico.
+Este resultado indica que se detectó un huevo con una confianza del $89%$ en la posición $(320, 240)$. Este punto luego mediante algoritmo se transforan en coordenadas cartesianas para utilizarlo en la cinemática inversa.
 
 <p align="center">
   <img src="detección.png" alt="Vista del robot" width="720"/>
