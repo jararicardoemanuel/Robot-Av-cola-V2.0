@@ -15,7 +15,8 @@ Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos hori
 ## 🟠Prototipo REAL
 
 <p align="center">
-  <img src="20250718_190812.jpg" alt="Vista del robot" width="400"/>
+  <img src="portada1.jpg" alt="Vista del robot" width="400"/>
+  <img src="portada2.jpg" alt="Vista lateral" width="400"/>
 </p>
 
 ## 🟠Procesamiento de Imágenes
