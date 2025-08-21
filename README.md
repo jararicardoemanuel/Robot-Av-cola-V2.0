@@ -56,10 +56,10 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
 Este resultado indica que se detectó un huevo con una confianza del $89%$ en la posición $(320, 240)$. Este punto luego mediante algoritmo se transforan en coordenadas cartesianas para utilizarlo en la cinemática inversa.
 
 <p align="center">
-  <img src="detección.png" alt="Vista del robot" width="720"/>
+  <img src="images/detección.png" alt="Vista del robot" width="720"/>
 </p>
 <p align="center">
-  <img src="coordenadas.png" alt="Vista del robot" width="1440"/>
+  <img src="images/coordenadas.png" alt="Vista del robot" width="1440"/>
 </p>
 
 ## 🟠Modelo matemático (Cinemática inversa) Robot
@@ -138,7 +138,7 @@ Configuración **codo arriba**
 • Con estos tres coordenadas articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo 17x13cm.
 
 <p align="center">
-  <img src="gif.gif" alt="Vista del robot" width="400"/>
+  <img src="images/gif.gif" alt="Vista del robot" width="400"/>
 </p>
 
 ## 🟠Video del Prototipo en funcionamiento
@@ -147,5 +147,5 @@ Configuración **codo arriba**
 
 
 <p align="center">
-  <img src="Logo FIUNLZ.png" alt="Vista del robot" width="400"/>
+  <img src="images/Logo FIUNLZ.png" alt="Vista del robot" width="400"/>
 </p>
