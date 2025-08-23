@@ -3,7 +3,7 @@
 </h1>
 
 Proyecto de la Práctica Profesional Supervisada "PPS" en Ingeniería Mecatrónica realizado en la FI-UNLZ.
-ensamblajePPS_page-0001
+
 <p align="center">
   <img src="images/EnsamblajePPS.JPG" alt="Vista del robot" width="500"/>
 </p>
