@@ -59,6 +59,7 @@ Y = a_y \cdot v + b_y
 $$
 
 donde:
+
   •  \(u,v\): coordenadas en píxeles de la detección
   
   •  \(X,Y\): coordenadas físicas en cm
