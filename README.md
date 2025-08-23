@@ -5,7 +5,7 @@
 Proyecto de la Práctica Profesional Supervisada "PPS" en Ingeniería Mecatrónica realizado en la FI-UNLZ.
 ensamblajePPS_page-0001
 <p align="center">
-  <img src="images/ensamblajePPS_page-0001.jpg" alt="Vista del robot" width="1200"/>
+  <img src="images/EnsamblajePPS.jpg" alt="Vista del robot" width="1200"/>
 </p>
 
 Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software de procesamiento de imágenes para la detección y localización programado en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea un Sistema IoT para el accionamiento de control, aplicación para el envío de mensajes y recepción a través de "MQTT", además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
