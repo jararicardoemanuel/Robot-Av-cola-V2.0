@@ -149,7 +149,9 @@ Aquí una vista general del diagrama eléctrico principal de mi prototipo:
 <p align="center">
   <img src="images/Esquematico1.jpg" alt="Vista" width="1200"/>
 </p>
-
+<p align="center">
+  <img src="images/Esquematico2.jpg" alt="Vista" width="1200"/>
+</p>
 
 ## 🟠Video del Prototipo en funcionamiento
 
