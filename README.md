@@ -141,6 +141,15 @@ Configuración **codo arriba**
   <img src="images/gif.gif" alt="Vista del robot" width="400"/>
 </p>
 
+## Planos eléctricos
+
+Aquí una vista general del diagrama eléctrico principal de mi prototipo:
+
+![Diagrama eléctrico](.images/coordenadas.png)
+
+Podés ver todos los planos en la carpeta [Planos/diagramas_esquemas](./Planos/diagramas_esquemas).
+
+
 ## 🟠Video del Prototipo en funcionamiento
 
 [Link de Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
