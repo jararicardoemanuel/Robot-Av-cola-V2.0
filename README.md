@@ -206,6 +206,9 @@ Aquí una vista general de los planos del prototipo:
   <img src="images/gif.gif" alt="Vista del robot" width="400"/>
 </p>
 
+## Agradecimiento
+
+Quiero agradecer al profesor LUKASZEWICZ, Cristian por su acompañamiento durante el desarrollo de este proyecto, el cual constituye una extensión del proyecto final de la carrera. La experiencia me permitió consolidar conocimientos en robótica y aplicarlos de manera práctica, logrando resultados satisfactorios en la precisión del agarre del objeto gracias a la integración de conceptos fundamentales que se requerían. Este trabajo representa un paso importante en mí proceso de constante aprendizaje, fortaleciendo las bases para seguir avanzando hacia las ciencias aplicadas y la construcción de nuevos desarrollos tecnológicos que me vaya proponiendo. Un fuerte agradecimiento a la FI-UNLZ por permitirme formarme en esta casa de estudios, brindandome oportunidades de crecer en mí formación profesional.
 
 <p align="center">
   <img src="images/Logo FIUNLZ.png" alt="Vista del robot" width="400"/>
