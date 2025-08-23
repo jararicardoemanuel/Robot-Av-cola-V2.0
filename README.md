@@ -8,7 +8,7 @@ Proyecto de la Práctica Profesional Supervisada "PPS" en Ingeniería Mecatróni
   <img src="images/EnsamblajePPS.JPG" alt="Vista del robot" width="500"/>
 </p>
 
-Sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software de procesamiento de imágenes para la detección y localización programado en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea un Sistema IoT para el accionamiento de control, aplicación para el envío de mensajes y recepción a través de "MQTT", además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
+Es un sistema robótico de 3 GDL para realizar la recolección de huevos en nidos horizontales, tiene implementado un software de procesamiento de imágenes para la detección y localización programado en python utilizando la librería cv2 y un modelo pre-entrenado de roboflow. Se emplea un Sistema IoT para el accionamiento de control, aplicación para el envío de mensajes y recepción a través de "MQTT", además del monitoreo de variables ambientales cómo la temperatura, gas CO2, húmedad.
 
 ## 🟠Tecnologías Aplicadas
 • ESP32 - Shield cnc 3 ejes, para el robot se utilizan motores nema 17 con reductor planetario 5:1, motores eléctricos de cc para el carro que lo traslada y sensores de proximidad FC.
