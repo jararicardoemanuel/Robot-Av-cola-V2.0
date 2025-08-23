@@ -141,8 +141,7 @@ Configuración **codo arriba**
   <img src="images/gif.gif" alt="Vista del robot" width="400"/>
 </p>
 
-## Planos eléctricos
-
+## 🟠Planos Electrónicos
 Aquí una vista general del diagrama eléctrico principal de mi prototipo:
 
 
