@@ -145,10 +145,9 @@ Configuración **codo arriba**
 
 Aquí una vista general del diagrama eléctrico principal de mi prototipo:
 
-![Diagrama eléctrico]
 
 <p align="center">
-  <img src="images/Esquematico1.jpg" alt="Vista" width="700"/>
+  <img src="images/Esquematico1.jpg" alt="Vista" width="1200"/>
 </p>
 
 
