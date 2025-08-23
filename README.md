@@ -194,10 +194,8 @@ Aquí una vista general del diagrama electrónico principal del prototipo:
 Aquí una vista general de los planos del prototipo:
 
 <p align="center">
-  <img src="images/1base_page-0001.jpg" alt="Vista" width="1200"/>
-</p>
-<p align="center">
-  <img src="images/5codoP1_page-0001.jpg" alt="Vista" width="1200"/>
+  <img src="images/1base_page-0001.jpg" alt="Vista del robot" width="600"/>
+  <img src="images/5codoP1_page-0001.jpg" alt="Vista lateral" width="600"/>
 </p>
 
 ## 🟠Video del Prototipo en funcionamiento
