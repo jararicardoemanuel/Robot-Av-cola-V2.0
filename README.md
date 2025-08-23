@@ -47,11 +47,12 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
 En el sistema de visión, las detecciones entregadas por el modelo de Roboflow
 se expresan en coordenadas de imagen en píxeles. Para utilizar estos
 datos en el control del robot, es necesario transformarlos a coordenadas físicas
-\((X,Y)\) medidas en centímetros sobre el plano de trabajo.
+(X,Y) medidas en centímetros sobre el plano de trabajo.
 
 En una aproximación simple, se puede realizar una \textbf{calibración lineal} por
 ejes independientes, donde se ajusta un factor de escala y un desplazamiento
 (offset) a partir de puntos de referencia medidos experimentalmente:
+
 $$
 X = a_x \cdot u + b_x, \qquad
 Y = a_y \cdot v + b_y
