@@ -59,19 +59,17 @@ Y = a_y \cdot v + b_y
 $$
 
 donde:
-\begin{itemize}
-  \item \(u,v\): coordenadas en píxeles de la detección,
-  \item \(X,Y\): coordenadas físicas en cm,
-  \item \(a_x, a_y\): factores de conversión (cm/px),
-  \item \(b_x, b_y\): offsets de calibración.
-\end{itemize}
+  •  \(u,v\): coordenadas en píxeles de la detección,
+  •  \(X,Y\): coordenadas físicas en cm,
+  •  \(a_x, a_y\): factores de conversión (cm/px),
+  •  \(b_x, b_y\): offsets de calibración.
 
 En el prototipo actual se obtuvieron los siguientes valores:
 
-\[
+$$
 X = (0.0328)\cdot u + 0.5, \qquad
 Y = (0.0327)\cdot v + 0.3
-\]
+$$
 
 Esta técnica corresponde a una \emph{transformación lineal afín} por ejes. 
 Para aplicaciones que requieren mayor precisión (considerando efectos de
