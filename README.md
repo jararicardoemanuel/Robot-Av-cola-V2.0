@@ -150,11 +150,11 @@ Aquí una vista general del diagrama eléctrico principal de mi prototipo:
 
 ## 🟠Video del Prototipo en funcionamiento
 
+[Link de Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
+
 <p align="center">
   <img src="images/gif.gif" alt="Vista del robot" width="400"/>
 </p>
-
-[Link de Google Drive](https://drive.google.com/file/d/1ZrKL6yfj1HvtoRiwAzGiAirnJcBjSen1/view?usp=drive_link)
 
 
 <p align="center">
