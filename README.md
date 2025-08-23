@@ -180,9 +180,18 @@ Configuración **codo arriba**
 
 • Con estos tres coordenadas articulares $$\(\theta_1, \theta_2, \theta_3)\$$ se obtiene la **configuración del robot** para alcanzar cualquier punto dentro de su espacio de trabajo 17x13cm.
 
-## 🟠Planos Electrónicos
-Aquí una vista general del diagrama eléctrico principal de mi prototipo:
+## 🟠Plano Electrónico
+Aquí una vista general del diagrama electrónico principal del prototipo:
 
+<p align="center">
+  <img src="images/Esquematico1.jpg" alt="Vista" width="1200"/>
+</p>
+<p align="center">
+  <img src="images/Esquematico2.jpg" alt="Vista" width="1200"/>
+</p>
+
+## 🟠Plano Electrónico
+Aquí una vista general de los planos del prototipo:
 
 <p align="center">
   <img src="images/Esquematico1.jpg" alt="Vista" width="1200"/>
