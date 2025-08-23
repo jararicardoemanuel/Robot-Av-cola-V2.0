@@ -29,18 +29,71 @@ Para la detección automática de huevos se utiliza un modelo de visión por com
 
 ### Captura de imagen:
   La cámara ESP32-CAM ubicada en el extremos del codo apuntando hacia abajo captura las imágenes en tiempo real enfocando el nido, así cubriendo toda la parte donde se ubica el huevo.
-  
+  Captura la foto y lo comprime en formato JPEG. Este archivo se transfiere a la PC o servidor de inferencia, por HTTP. El resultado de este paso es un archivo .jpg accesible   en el      host.
 ### Inferencia con el modelo:
   Las imágenes capturadas son enviadas al modelo de Roboflow, el cual aplica un algoritmo de detección de objetos (YOLOv9). Como resultado, se obtiene un conjunto de predicciones que      incluyen:
   Clases detectadas (``huevo'').
   Confianza de detección (probabilidad asociada a la predicción).
-  Coordenadas del recuadro delimitador:
+  Coordenadas del recuadro:
   (x, y, w, h) donde $x$ e $y$ representan la posición central del objeto, mientras que $w$ y $h$ corresponden al ancho y alto del recuadro.
 
 ### Conversión a coordenadas del robot:
   A partir de las coordenadas $(x, y)$ obtenidas de la imagen (resolución de $640 \times 480$ píxeles), se realiza una transformación a coordenadas físicas reales del     robot:
   (X_r, Y_r) = f(x, y)
   donde la función $f$ corresponde a la calibración que traduce los píxeles en coordenadas cartesianas, garantizando que el brazo robótico pueda posicionarse correctamente sobre el        huevo.
+
+  • Conversión de píxeles a coordenadas físicas:
+
+En el sistema de visión, las detecciones entregadas por el modelo de Roboflow
+se expresan en coordenadas de imagen en píxeles. Para utilizar estos
+datos en el control del robot, es necesario transformarlos a coordenadas físicas
+\((X,Y)\) medidas en centímetros sobre el plano de trabajo.
+
+En una aproximación simple, se puede realizar una \textbf{calibración lineal} por
+ejes independientes, donde se ajusta un factor de escala y un desplazamiento
+(offset) a partir de puntos de referencia medidos experimentalmente:
+
+\[
+X = a_x \cdot u + b_x, \qquad
+Y = a_y \cdot v + b_y
+\]
+
+donde:
+\begin{itemize}
+  \item \(u,v\): coordenadas en píxeles de la detección,
+  \item \(X,Y\): coordenadas físicas en cm,
+  \item \(a_x, a_y\): factores de conversión (cm/px),
+  \item \(b_x, b_y\): offsets de calibración.
+\end{itemize}
+
+En el prototipo actual se obtuvieron los siguientes valores:
+
+\[
+X = (0.0328)\cdot u + 0.5, \qquad
+Y = (0.0327)\cdot v + 0.3
+\]
+
+Esta técnica corresponde a una \emph{transformación lineal afín} por ejes. 
+Para aplicaciones que requieren mayor precisión (considerando efectos de
+perspectiva y distorsión óptica), puede extenderse a una \textbf{homografía
+proyectiva}, donde se estima una matriz \(H \in \mathbb{R}^{3\times 3}\) que
+relaciona coordenadas homogéneas de píxeles y mundo:
+
+\[
+\lambda 
+\begin{bmatrix}
+X \\ Y \\ 1
+\end{bmatrix}
+=
+H \cdot
+\begin{bmatrix}
+u \\ v \\ 1
+\end{bmatrix}
+\]
+
+lo que permite mapear cualquier punto de la imagen a coordenadas físicas en el
+plano de trabajo.
+
 
 ### Selección y validación:
   Se consideran válidas únicamente las detecciones cuyo nivel de confianza sea mayor a un umbral predefinido $0.40$. 
