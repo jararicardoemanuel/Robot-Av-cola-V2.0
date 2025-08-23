@@ -146,10 +146,10 @@ Configuración **codo arriba**
 Aquí una vista general del diagrama eléctrico principal de mi prototipo:
 
 ![Diagrama eléctrico]
+
 <p align="center">
-  <img src="images/Esquematico1" alt="Vista" width="400"/>
+  <img src="images/Esquematico1" alt="Vista" width="700"/>
 </p>
-Podés ver todos los planos en la carpeta [Planos/diagramas_esquemas](./Planos/diagramas_esquemas).
 
 
 ## 🟠Video del Prototipo en funcionamiento
