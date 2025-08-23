@@ -49,7 +49,7 @@ se expresan en coordenadas de imagen en píxeles. Para utilizar estos
 datos en el control del robot, es necesario transformarlos a coordenadas físicas
 (X,Y) medidas en centímetros sobre el plano de trabajo.
 
-En una aproximación simple, se puede realizar una \textbf{calibración lineal} por
+En una aproximación simple, se puede realizar una calibración lineal por
 ejes independientes, donde se ajusta un factor de escala y un desplazamiento
 (offset) a partir de puntos de referencia medidos experimentalmente:
 
