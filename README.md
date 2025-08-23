@@ -59,7 +59,7 @@ Este resultado indica que se detectó un huevo con una confianza del $89%$ en la
   <img src="images/detección.png" alt="Vista del robot" width="720"/>
 </p>
 <p align="center">
-  <img src="images/coordenadas.png" alt="Vista del robot" width="1440"/>
+  <img src="images/coordenadas.png" alt="Vista del robot" width="1900"/>
 </p>
 
 ## 🟠Modelo matemático (Cinemática inversa) Robot
