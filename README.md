@@ -91,7 +91,7 @@ $$
       "y": 240,
       "width": 50,
       "height": 60
-Este resultado indica que se detectó un huevo con una confianza del $0.89$ en la posición $(320, 240)$. 
+Este resultado indica que se detectó un huevo con una confianza del $0.89$ en la posición $(320, 240)$. Se adjuntan imagenes dónde se observa la localización del objeto y como son transmitidas a través de mqtt.
 
 <p align="center">
   <img src="images/detección.png" alt="Vista del robot" width="720"/>
